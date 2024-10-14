@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <title>Dino-Pru's Poem Generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Welcome to Dino-Pru's poem generator.</h1>
+      </header>
+
+      <main>
+        <div class="form-container">
+          <form class="form" id="poem-generator-form">
+            <input
+              type="text"
+              placeholder="Enter a theme for a poem."
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="user-instructions"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="hint">i.e.: flowers, trees.</div>
+        </div>
+        <div class="poem hidden" id="poem"></div>
+      </main>
+
+      <footer>
+        This AI project was coded by ❤️ <a href="https://github.com/Dino-Pru" target="_blank">Dino Pru</a> and is <a href="https://github.com/Dino-Pru/poem-generator" target="_blank">open-sourced on Github</a> and is <a href="https://dino-ai-poem-generator.netlify.app/" target="_blank">hosted on Netlify</a>
+      </footer>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
